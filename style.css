@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background : linear-gradient(to right bottom , rgb(26,26,26),rgb(30, 30, 30) , black);
+    padding: 20px;
+}
+
+section{
+    height: 100%;
+    width: 400px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+    
+}
+
+.all-reels{
+    height: 100%;
+    width: 100%;
+    
+}
+.reel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    
+    
+}
+
+.reel img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.reel .bottom{
+    width: 100%;
+    padding: 30px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.844));
+    position: absolute;
+    bottom: 0;
+}
+.bottom .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bottom .user img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.bottom .user h4{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bottom .user button{
+    background-color: transparent;
+    padding: 2px 4px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+    border: 1px solid white;
+}
+
+.bottom>h3{
+    font-weight: 500;
+    font-size: 20px;
+}
