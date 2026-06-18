@@ -89,3 +89,34 @@ section{
     font-weight: 500;
     font-size: 20px;
 }
+
+.right{
+    padding: 30px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    transform: translateX(100%);
+}
+
+.right i{
+    font-size: 25px;
+    font-weight: 500;
+} 
+
+.right h6{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.right>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
