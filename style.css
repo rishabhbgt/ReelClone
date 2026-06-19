@@ -28,21 +28,29 @@ section{
     background-color: black;
     border-radius: 10px;
     margin: auto;
-    
 }
 
 .all-reels{
     height: 100%;
     width: 100%;
-    
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
+
+.all-reels::-webkit-scrollbar{
+    display: none;
+}
+
 .reel{
     height: 100%;
     width: 100%;
     position: relative;
     border-radius: 10px;
-    
-    
+    overflow: hidden;
+    margin-bottom: 20px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .reel img{
@@ -96,17 +104,21 @@ section{
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 15px;
+    gap: 18px;
     position: absolute;
     right: 0;
     bottom: 10%;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
 }
 
 .right i{
     font-size: 25px;
     font-weight: 500;
 } 
+
+.right h4{
+    cursor: pointer;
+}
 
 .right h6{
     font-size: 15px;
